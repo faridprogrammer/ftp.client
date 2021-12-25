@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FtpChecker": {
+      "commandName": "Project",
+      "commandLineArgs": "fetch-folder -p / -h 127.0.0.1 -u test"
+    }
+  }
+}
