@@ -32,6 +32,20 @@ namespace Ftp.Client
                 if (EnablePassive)
                     ftpClient.DataConnectionType = FtpDataConnectionType.AutoPassive;
 
+                ftpClient.ValidateCertificate += (control, args) =>
+                {
+                    Console.BackgroundColor = ConsoleColor.DarkGreen;
+                    Console.WriteLine("Certificate to validate: " + args?.Certificate?.GetCertHashString());
+                    Console.ResetColor();
+
+                    if (!string.IsNullOrEmpty(Certificate))
+                    {
+                        var isValid = args.Certificate.GetCertHashString()?.ToUpper() == Certificate.Replace(":", "").ToUpper();
+                        if (!isValid)
+                            throw new InvalidOperationException();
+                    }
+                };
+
                 ftpClient.Connect();
 
                 var listing = ftpClient.GetNameListing(Path);
@@ -55,5 +69,6 @@ namespace Ftp.Client
             }
 
         }
+
     }
 }

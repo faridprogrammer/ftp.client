@@ -50,6 +50,12 @@ namespace Ftp.Client
         }
 
 
+        [Option('r', "certificate", Required = false, HelpText = "Certificate string. If this parameter has been set then the validation will occur.")]
+        public string Certificate
+        {
+            get;
+            set;
+        }
 
         public virtual void Execute()
         {

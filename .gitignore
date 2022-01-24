@@ -2,3 +2,4 @@
 obj/Release
 obj
 .vs
+Properties/PublishProfiles/FolderProfile.pubxml.user
