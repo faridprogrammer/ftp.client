@@ -57,6 +57,13 @@ namespace Ftp.Client
             set;
         }
 
+        [Option('d', "debug", Required = false, HelpText = "Enables detailed logging.")]
+        public bool DebugMode
+        {
+            get;
+            set;
+        }
+
         public virtual void Execute()
         {
 

@@ -27,6 +27,8 @@ Currently there is two ftp commands available in the tool.
   -e, --external-ip    Set this parameter to your NAT outgoing IP if you are operating within a NAT
 
   -r, --certificate    Certificate string. If this parameter has been set then the validation will occur.
+  
+  -d, --debug          Enables detailed logging.
 
   --help               Display this help screen.
 
@@ -50,6 +52,8 @@ Currently there is two ftp commands available in the tool.
 
   -r, --certificate    Certificate string. If this parameter has been set then the validation will occur.
 
+  -d, --debug          Enables detailed logging.
+
   --help               Display this help screen.
 
   --version            Display version information.
@@ -63,7 +67,7 @@ In order to call simple ftp commands within this application (using dotnet) to t
 
 ## Download
 
-You can download the latest version [here](https://github.com/faridprogrammer/ftp.client/releases/tag/V1.0.1).
+You can download the latest version [here](https://github.com/faridprogrammer/ftp.client/releases/tag/v1.0.3).
 
 
 
