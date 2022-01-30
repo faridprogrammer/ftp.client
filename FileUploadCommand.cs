@@ -25,6 +25,9 @@ namespace Ftp.Client
         {
             var ftpClient = new FtpClient(Host, UserName, Password);
 
+            if (DebugMode)
+                ftpClient.OnLogEvent += (level, s) => Console.WriteLine($"{level}: {s}");
+
             try
             {
                 if (EnableSsl)
