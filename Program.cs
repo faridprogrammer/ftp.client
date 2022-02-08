@@ -1,5 +1,6 @@
 ﻿using System;
 using CommandLine;
+using Ftp.Client.Commands;
 
 namespace Ftp.Client
 {
@@ -14,7 +15,7 @@ namespace Ftp.Client
                 return;
             }
 
-            Parser.Default.ParseArguments<FetchFolderCommand, FileUploadCommand>(args).WithParsed(t => ((ICommand)t).Execute());
+            Parser.Default.ParseArguments<FetchFolderCommand, FileUploadCommand, DownloadFolderCommand>(args).WithParsed(t => ((ICommand)t).Execute());
 
             Console.WriteLine("Press any key to close...");
         }
