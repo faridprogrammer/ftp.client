@@ -48,6 +48,7 @@ namespace Ftp.Client.Commands
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine($"No files downloaded");
                 Console.ResetColor();
+                Console.WriteLine(" ");
             }
         }
     }

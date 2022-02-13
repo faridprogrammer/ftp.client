@@ -26,7 +26,6 @@ namespace Ftp.Client.Commands
         {
             var result = ftpClient.UploadFile(LocalFile, Path);
 
-            Console.WriteLine("Result: ");
             Console.WriteLine(result);
         }
     }

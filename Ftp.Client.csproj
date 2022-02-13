@@ -2,9 +2,9 @@
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
 		<TargetFramework>net6.0</TargetFramework>
-		<AssemblyVersion>1.0.4</AssemblyVersion>
-		<FileVersion>1.0.4</FileVersion>
-		<version>1.0.4</version>
+		<AssemblyVersion>2.0.0</AssemblyVersion>
+		<FileVersion>2.0.0</FileVersion>
+		<version>2.0.0</version>
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="CommandLineParser" Version="2.8.0" />

@@ -19,7 +19,6 @@ namespace Ftp.Client.Commands
         {
             var listing = ftpClient.GetNameListing(Path);
 
-            Console.WriteLine("Result: ");
             foreach (var s in listing)
             {
                 Console.WriteLine(s);
