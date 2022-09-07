@@ -15,6 +15,7 @@ namespace Ftp.Client.Commands
                 if (Program.Client != null)
                 {
                     Program.Client.Disconnect();
+                    Program.Client.Dispose();
                     Console.WriteLine("Successfully connected to ftp server...");
                     Program.Client = null;
                 }
